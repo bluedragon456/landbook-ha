@@ -5,7 +5,6 @@ from __future__ import annotations
 from unittest.mock import MagicMock
 
 import pytest
-
 from homeassistant.components.fan import FanEntityFeature
 
 from custom_components.landbook.fan import LandbookFan, _suggest_area
