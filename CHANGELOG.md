@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.2.7b1] - 2026-10-26
+
+- Fork-only test build: speed 0 turns off; selecting a nonzero speed while off powers on in manual modes.
+- Hardware verification pending. Auto mode speed restrictions are preserved.
+
 ## [2.2.6](https://github.com/zackwag/landbook-ha/compare/v2.2.5...v2.2.6) (2026-09-25)
 
 
