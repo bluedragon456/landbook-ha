@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.7b2] - 2026-11-01
+
+- Fork test release: use fresh property confirmation for local writes and keep blocking device I/O off Home Assistant's event loop.
+- Retry local control after a five-minute cooldown following repeated short sessions instead of requiring a reload.
+- Retain the b1 speed/power fix. Requires fork API 0.10.0b1; hardware validation pending.
+
 ## [2.2.7b1] - 2026-10-26
 
 - Fork-only test build: speed 0 turns off; selecting a nonzero speed while off powers on in manual modes.

@@ -11,7 +11,7 @@
   "issue_tracker": "https://github.com/zackwag/landbook-ha/issues",
   "quality_scale": "custom",
   "requirements": [
-    "landbook-api>=0.9.0"
+    "landbook-api @ https://github.com/bluedragon456/landbook-api/releases/download/v0.10.0b1/landbook_api-0.10.0b1-py3-none-any.whl"
   ],
-  "version": "2.2.7b1"
+  "version": "2.2.7b2"
 }

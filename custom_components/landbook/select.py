@@ -99,7 +99,7 @@ class LandbookCountdown(SelectEntity):
         if option not in self._options_map:
             return
         self._attr_current_option = option
-        self._data["send_command"]({self._code: self._options_map[option]})
+        await self.hass.async_add_executor_job(self._data["send_command"], {self._code: self._options_map[option]})
         self.async_write_ha_state()
 
     async def async_added_to_hass(self) -> None:
@@ -187,7 +187,7 @@ class LandbookSelect(SelectEntity):
         if option not in self._options_map:
             return
         self._attr_current_option = option
-        self._data["send_command"]({self._code: self._options_map[option]})
+        await self.hass.async_add_executor_job(self._data["send_command"], {self._code: self._options_map[option]})
         self.async_write_ha_state()
 
     async def async_added_to_hass(self) -> None:
