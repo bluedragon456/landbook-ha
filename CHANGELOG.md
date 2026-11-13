@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.2.9b1] - 2026-11-13
+
+- Fork beta combining upstream 2.2.8 with the previously tested fresh-state confirmation, executor dispatch, and local retry cooldown changes.
+- Retains the fork API 0.10.0b1 dependency with the bounded fresh-property probe.
+- Cloud authorization failures remain under investigation.
+
 ## [2.2.7b2] - 2026-11-01
 
 - Fork test release: use fresh property confirmation for local writes and keep blocking device I/O off Home Assistant's event loop.
@@ -10,6 +16,21 @@
 
 - Fork-only test build: speed 0 turns off; selecting a nonzero speed while off powers on in manual modes.
 - Hardware verification pending. Auto mode speed restrictions are preserved.
+
+## [2.2.8](https://github.com/zackwag/landbook-ha/compare/v2.2.7...v2.2.8) (2026-11-11)
+
+
+### Miscellaneous Chores
+
+* fix dependabot commit-message prefixes for conventional commits ([#80](https://github.com/zackwag/landbook-ha/issues/80)) ([e382b8e](https://github.com/zackwag/landbook-ha/commit/e382b8ef1778df08df81a26792d8f41ee5b663e8))
+
+## [2.2.7](https://github.com/zackwag/landbook-ha/compare/v2.2.6...v2.2.7) (2026-11-04)
+
+
+### Bug Fixes
+
+* handle power transitions when setting fan percentage ([#78](https://github.com/zackwag/landbook-ha/issues/78)) ([1866d20](https://github.com/zackwag/landbook-ha/commit/1866d204a76ff8860f9d1f23407605384df54688))
+
 
 ## [2.2.6](https://github.com/zackwag/landbook-ha/compare/v2.2.5...v2.2.6) (2026-09-25)
 

@@ -13,5 +13,5 @@
   "requirements": [
     "landbook-api @ https://github.com/bluedragon456/landbook-api/releases/download/v0.10.0b1/landbook_api-0.10.0b1-py3-none-any.whl"
   ],
-  "version": "2.2.7b2"
+  "version": "2.2.9b1"
 }
